@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F1F1F"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcule Sua Média"
+            android:textColor="#E20000"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:paddingBottom="20dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background_gold"
+            android:hint="Escreva seu nome"
+            android:padding="15dp"
+            android:textColorHint="#BBBBBB"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="5dp"
+            android:id="@+id/cpNome"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background_gold"
+            android:hint="Escreva seu email"
+            android:padding="15dp"
+            android:textColorHint="#BBBBBB"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="5dp"
+            android:id="@+id/cpEmail"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Idade"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background_gold"
+            android:hint="Escreva sua idade"
+            android:padding="15dp"
+            android:textColorHint="#BBBBBB"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="5dp"
+            android:id="@+id/cpIdade"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Disciplina"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background_gold"
+            android:hint="Escreva a disciplina"
+            android:padding="15dp"
+            android:textColorHint="#BBBBBB"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="5dp"
+            android:id="@+id/cpDisciplina"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nota 1° Bimestre"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background_gold"
+            android:hint="Digite a nota"
+            android:padding="15dp"
+            android:textColorHint="#BBBBBB"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="5dp"
+            android:id="@+id/cpNota1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nota 2° Bimestre"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background_gold"
+            android:hint="Digite a nota"
+            android:padding="15dp"
+            android:textColorHint="#BBBBBB"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="5dp"
+            android:id="@+id/cpNota2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="25dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enviar"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#E20000"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:elevation="4dp"
+                android:id="@+id/btEnviar"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limpar"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#E20000"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:elevation="4dp"
+                android:id="@+id/btLimpar"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvResultado"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvErro"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvHistorico"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>
